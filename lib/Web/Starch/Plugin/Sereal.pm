@@ -32,7 +32,7 @@ Web::Starch::Plugin::Sereal - Use Sereal for cloning and diffing Web::Starch dat
 
 By default L<Web::Starch::Session/clone_data> and L<Web::Starch::Session/is_data_diff>
 use L<Storable> to do the heavy lifting.  This module replaces those two methods
-with ones that use L<Sereal> which can be leeps and bounds faster than Storable.
+with ones that use L<Sereal> which can be leaps and bounds faster than Storable.
 
 In this author's testing C<is_data_diff> will be about 3x faster with Sereal and
 C<clone_data> will be about 1.5x faster with Sereal.
