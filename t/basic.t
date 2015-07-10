@@ -2,8 +2,12 @@
 use strictures 2;
 
 use Test::More;
-
+use Test::Web::Starch;
 use Web::Starch;
+
+Test::Web::Starch->new(
+    plugins => ['::Sereal'],
+)->test();
 
 my $starch = Web::Starch->new_with_plugins(
     ['::Sereal'],
