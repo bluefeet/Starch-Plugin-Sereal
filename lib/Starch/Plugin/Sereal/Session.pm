@@ -1,4 +1,4 @@
-package Web::Starch::Plugin::Sereal::Session;
+package Starch::Plugin::Sereal::Session;
 
 use Sereal::Encoder;
 use Sereal::Decoder;
@@ -8,7 +8,7 @@ use strictures 2;
 use namespace::clean;
 
 with qw(
-    Web::Starch::Plugin::ForSession
+    Starch::Plugin::ForSession
 );
 
 sub clone_data {

@@ -1,4 +1,4 @@
-package Web::Starch::Plugin::Sereal::Manager;
+package Starch::Plugin::Sereal::Manager;
 
 use Sereal::Encoder;
 use Sereal::Decoder;
@@ -9,7 +9,7 @@ use strictures 2;
 use namespace::clean;
 
 with qw(
-    Web::Starch::Plugin::ForManager
+    Starch::Plugin::ForManager
 );
 
 has sereal_encoder => (

@@ -1,11 +1,11 @@
-package Web::Starch::Plugin::Sereal;
+package Starch::Plugin::Sereal;
 
 use Moo;
 use strictures 2;
 use namespace::clean;
 
 with qw(
-    Web::Starch::Plugin::Bundle
+    Starch::Plugin::Bundle
 );
 
 sub bundled_plugins {
@@ -20,17 +20,17 @@ __END__
 
 =head1 NAME
 
-Web::Starch::Plugin::Sereal - Use Sereal for cloning and diffing Web::Starch data structures.
+Starch::Plugin::Sereal - Use Sereal for cloning and diffing Starch data structures.
 
 =head1 SYNOPSIS
 
-    my $starch = Web::Starch->new_with_plugins(
+    my $starch = Starch->new_with_plugins(
         ['::Sereal'],
     );
 
 =head1 DESCRIPTION
 
-By default L<Web::Starch::Session/clone_data> and L<Web::Starch::Session/is_data_diff>
+By default L<Starch::Session/clone_data> and L<Starch::Session/is_data_diff>
 use L<Storable> to do the heavy lifting.  This module replaces those two methods
 with ones that use L<Sereal> which can be leaps and bounds faster than Storable.
 

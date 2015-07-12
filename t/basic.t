@@ -2,14 +2,14 @@
 use strictures 2;
 
 use Test::More;
-use Test::Web::Starch;
-use Web::Starch;
+use Test::Starch;
+use Starch;
 
-Test::Web::Starch->new(
+Test::Starch->new(
     plugins => ['::Sereal'],
 )->test();
 
-my $starch = Web::Starch->new_with_plugins(
+my $starch = Starch->new_with_plugins(
     ['::Sereal'],
     store => { class=>'::Memory' },
 );
