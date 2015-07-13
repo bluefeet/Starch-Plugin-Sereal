@@ -33,7 +33,7 @@ An instance of L<Sereal::Decoder>.
 
 An instance of L<Sereal::Encoder> with the C<canonical> option set.
 
-=head1 MODIFIED STATE METHODS
+=head1 MODIFIED MANAGER METHODS
 
 =head2 clone_data
 
