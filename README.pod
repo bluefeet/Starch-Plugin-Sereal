@@ -6,8 +6,8 @@ Starch::Plugin::Sereal - Use Sereal for cloning and diffing Starch data structur
 
 =head1 SYNOPSIS
 
-    my $starch = Starch->new_with_plugins(
-        ['::Sereal'],
+    my $starch = Starch->new(
+        plugins => ['::Sereal'],
     );
 
 =head1 DESCRIPTION
