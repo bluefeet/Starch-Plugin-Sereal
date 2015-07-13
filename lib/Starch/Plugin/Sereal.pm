@@ -11,7 +11,7 @@ with qw(
 sub bundled_plugins {
     return [qw(
         ::Sereal::Manager
-        ::Sereal::Session
+        ::Sereal::State
     )];
 }
 
@@ -30,7 +30,7 @@ Starch::Plugin::Sereal - Use Sereal for cloning and diffing Starch data structur
 
 =head1 DESCRIPTION
 
-By default L<Starch::Session/clone_data> and L<Starch::Session/is_data_diff>
+By default L<Starch::State/clone_data> and L<Starch::State/is_data_diff>
 use L<Storable> to do the heavy lifting.  This module replaces those two methods
 with ones that use L<Sereal> which can be leaps and bounds faster than Storable.
 
@@ -51,7 +51,7 @@ An instance of L<Sereal::Decoder>.
 
 An instance of L<Sereal::Encoder> with the C<canonical> option set.
 
-=head1 MODIFIED SESSION METHODS
+=head1 MODIFIED STATE METHODS
 
 =head2 clone_data
 

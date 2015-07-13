@@ -9,28 +9,28 @@ Test::Starch->new(
     plugins => ['::Sereal'],
 )->test();
 
-my $starch = Starch->new_with_plugins(
-    ['::Sereal'],
+my $starch = Starch->new(
+    plugins => ['::Sereal'],
     store => { class=>'::Memory' },
 );
 
-my $session = $starch->session();
+my $state = $starch->state();
 
 my $data = { foo=>32, bar=>[1,2,3] };
 
 is_deeply(
-    $session->clone_data( $data ),
+    $state->clone_data( $data ),
     $data,
     'cloned data',
 );
 
 ok(
-    (!$session->is_data_diff($data, $data)),
+    (!$state->is_data_diff($data, $data)),
     'data is not diff',
 );
 
 ok(
-    $session->is_data_diff(12, $data),
+    $state->is_data_diff(12, $data),
     'data is diff',
 );
 
