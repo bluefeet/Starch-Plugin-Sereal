@@ -21,6 +21,8 @@ C<clone_data> will be about 1.5x faster with Sereal.
 
 =head1 MANAGER ATTRIBUTES
 
+These attributes are added to the L<Starch::Manager> class.
+
 =head2 sereal_encoder
 
 An instance of L<Sereal::Encoder>.
@@ -34,6 +36,8 @@ An instance of L<Sereal::Decoder>.
 An instance of L<Sereal::Encoder> with the C<canonical> option set.
 
 =head1 MODIFIED MANAGER METHODS
+
+These methods are added to the L<Starch::Manager> class.
 
 =head2 clone_data
 

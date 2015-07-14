@@ -35,6 +35,8 @@ with qw(
 
 =head1 MANAGER ATTRIBUTES
 
+These attributes are added to the L<Starch::Manager> class.
+
 =head2 sereal_encoder
 
 An instance of L<Sereal::Encoder>.
@@ -78,6 +80,8 @@ sub _build_canonical_sereal_encoder {
 }
 
 =head1 MODIFIED MANAGER METHODS
+
+These methods are added to the L<Starch::Manager> class.
 
 =head2 clone_data
 
