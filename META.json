@@ -42,18 +42,17 @@
       },
       "runtime" : {
          "requires" : {
-            "Moo" : "2",
+            "Moo" : "2.000000",
             "Sereal" : "3.003",
-            "Starch" : "0.01",
+            "Starch" : "0.10",
             "Type::Tiny" : "1.000005",
             "namespace::clean" : "0.24",
-            "strictures" : "2"
+            "strictures" : "2.000000"
          }
       },
       "test" : {
          "requires" : {
-            "Test::Fatal" : "0",
-            "Test::Simple" : "0.96"
+            "Test2::V0" : "0.000094"
          }
       }
    },
