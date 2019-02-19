@@ -1,6 +1,6 @@
 package Starch::Plugin::Sereal;
 
-$Starch::Plugin::Sereal::VERSION = '0.03';
+our $VERSION = '0.03';
 
 =head1 NAME
 
