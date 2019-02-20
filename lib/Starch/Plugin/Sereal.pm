@@ -1,5 +1,6 @@
 package Starch::Plugin::Sereal;
-
+use 5.008001;
+use strictures 2;
 our $VERSION = '0.03';
 
 =head1 NAME
@@ -28,7 +29,6 @@ use Sereal::Decoder;
 use Types::Standard -types;
 
 use Moo::Role;
-use strictures 2;
 use namespace::clean;
 
 with qw(

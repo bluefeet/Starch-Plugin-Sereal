@@ -2,7 +2,7 @@ Revision history for Perl extension Starch-Plugin-Sereal.
 
 {{$NEXT}}
 
- - Require perl 5.8 per Minilla.
+ - Require perl 5.8.1.
  - Simplify VERSION declarations.
 
 0.03 2019-02-18T06:01:42Z
