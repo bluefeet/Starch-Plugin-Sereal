@@ -31,9 +31,7 @@ use Types::Standard -types;
 use Moo::Role;
 use namespace::clean;
 
-with qw(
-    Starch::Plugin::ForManager
-);
+with 'Starch::Plugin::ForManager';
 
 =head1 MANAGER ATTRIBUTES
 
@@ -129,9 +127,9 @@ Starch-Plugin-Sereal GitHub issue tracker:
 
 L<https://github.com/bluefeet/Starch-Plugin-Sereal/issues>
 
-=head1 AUTHOR
+=head1 AUTHORS
 
-Aran Clary Deltac <bluefeetE<64>gmail.com>
+    Aran Clary Deltac <bluefeet@gmail.com>
 
 =head1 ACKNOWLEDGEMENTS
 
